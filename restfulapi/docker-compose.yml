@@ -1,0 +1,40 @@
+version: '3.9'
+services:
+  db:
+    image: mysql:8.0.29
+    command: mysqld --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      TZ: America/Sao_Paulo
+      MYSQL_ROOT_PASSWORD: Numsey#2023
+      MYSQL_USER: docker
+      MYSQL_PASSWORD: Numsey#2023
+      MYSQL_DATABASE: dbjsp
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_TCP_PORT: 3308
+    ports:
+      - 3308:3308
+    expose:
+      - 3308
+    networks:
+      - juniorcase-network
+  dbjsp:
+     image: guifami/dbjsp
+     restart: always
+     build: ./Java-Spring-Boot-RESTful-Api
+     working_dir: /Java-Spring-Boot-RESTful-Api
+     environment:
+       TZ: America/Sao_Paulo
+       SPRING.DATASOURCE.URL: jdbc:mysql://db:3308/dbjsp?useTimezone=true&serverTimezone=UTC
+       SPRING.DATASOURCE.USERNAME: root
+       SPRING.DATASOURCE.PASSWORD: Numsey#2023
+     ports:
+       - 80:80
+     command: mvn spring-boot:run
+     depends_on:
+       - db
+     networks:
+       - juniorcase-network
+networks:
+  juniorcase-network:
+    driver: bridge

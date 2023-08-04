@@ -1,0 +1,1 @@
+ALTER TABLE tb_logs ADD data datetime DEFAULT NOW();
