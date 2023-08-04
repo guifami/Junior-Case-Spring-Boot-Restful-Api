@@ -25,10 +25,13 @@
 ### Foi implementado 3 três tipos de Accepts: JSON, XML e YAML além dos links de HATEOAS e paginação, atigindo a Glória do REST. 
 A Aplicação foi construída com uma Arquitetura um pouco mais convencional devido a dificuldades durante a implementação prática da Arquitetura Hexagonal, que possivelmente atrasaria a implementação dos demais requisitos, mas claro, ainda extremamente sólida e eficiente.
 <br><br>
-Além dos <b>testes unitários</b>, também foram adicionados <b>testes de integração</b> para melhor cobertura da aplicação como um todo, incluindo testes de Cors, Converters, Swagger, e Controller (JSON, XML e YAML). <b>Totalizando 34 Testes Automatizados</b>, consequentemente, blindando a API :).
+Além dos <b>testes unitários</b>, também foram adicionados <b>testes de integração</b> para melhor cobertura da aplicação como um todo, incluindo testes de Cors, Converter, Swagger, e Controller (JSON, XML e YAML). <b>Totalizando 34 Testes Automatizados</b>, consequentemente, blindando a API :).
+<br><br>
+![image](https://github.com/guifami/Junior-Case-Spring-Boot-Restful-Api/assets/93688391/d7ef826d-0b91-4f88-8079-dd150b27597c)
 <br><br>
 
 # Docker
+![image](https://github.com/guifami/Junior-Case-Spring-Boot-Restful-Api/assets/93688391/1dc931a0-658f-4e67-946e-7d520fae79d1)
 
 Tanto a API quanto o Banco de Dados MySql foram Dockerizados durante o desenvolvimento e utiliza uma Stack do <b>Docker Compose</b> para facilitar a migração para um novo ambiente.
 Para os Testes de Integração, são construídos 2 containers temporários para execução dos testes, e assim que concluídos, ambos são destruídos.
