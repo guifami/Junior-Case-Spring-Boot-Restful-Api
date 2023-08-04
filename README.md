@@ -31,11 +31,13 @@ Além dos <b>testes unitários</b>, também foram adicionados <b>testes de integ
 <br><br>
 
 # Docker
-![image](https://github.com/guifami/Junior-Case-Spring-Boot-Restful-Api/assets/93688391/1dc931a0-658f-4e67-946e-7d520fae79d1)
+![image](https://github.com/guifami/Junior-Case-Spring-Boot-Restful-Api/assets/93688391/e780a195-eb55-441e-a828-5d6704b4d6d0)
 
 Tanto a API quanto o Banco de Dados MySql foram Dockerizados durante o desenvolvimento e utiliza uma Stack do <b>Docker Compose</b> para provisionamento automático.
 Para os Testes de Integração, são construídos 2 containers temporários para execução dos testes, e assim que concluídos, ambos são destruídos.
-Além disso, foi construído uma <b>Continuous Integration</b> com GitHub Actions para assim que "commitar" uma nova alteração no repositório Git, ela constrói as imagens Docker e as disponibiliza no Docker Hub, visível na aba <b>"Actions"</b>. 
+Além disso, foi construído uma <b>Continuous Integration</b> com GitHub Actions para assim que "commitar" uma nova alteração no repositório Git, ela constrói as imagens Docker e as disponibiliza no Docker Hub, visível na aba <b>"Actions"</b>.
+<br>
+<b>Link Docker Hub: https://hub.docker.com/repositories/guifami</b>
 <br><br>
 Para testes e melhor Documentação da API, adicionei o Swagger que assim que estiver rodando a aplicação, estará acessível no endereço: <b>http://localhost/swagger-ui/index.html#/</b>
 <br><br>
