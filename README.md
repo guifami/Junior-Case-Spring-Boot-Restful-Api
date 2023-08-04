@@ -39,7 +39,9 @@ Além disso, foi construído uma <b>Continuous Integration</b> com GitHub Action
 <br>
 <b>Link Docker Hub: https://hub.docker.com/repositories/guifami</b>
 <br><br>
-Para testes e melhor Documentação da API, adicionei o Swagger que assim que estiver rodando a aplicação, estará acessível no endereço: <b>http://localhost/swagger-ui/index.html#/</b>
+Para testes e melhor Documentação da API, adicionei o Swagger.
+<br>
+<b>Link do Swagger: http://localhost/swagger-ui/index.html#/</b>
 <br><br>
 
 # Logs
