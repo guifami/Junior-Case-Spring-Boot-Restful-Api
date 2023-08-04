@@ -41,7 +41,7 @@ Além disso, foi construído uma <b>Continuous Integration</b> com GitHub Action
 <br><br>
 Para testes e melhor Documentação da API, adicionei o Swagger.
 <br>
-<b>Link do Swagger: http://localhost/swagger-ui/index.html#/</b>
+<b>Link do Swagger quando a aplicação estiver executando: http://localhost/swagger-ui/index.html#/</b>
 <br><br>
 
 # Logs
