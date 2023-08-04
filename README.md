@@ -15,7 +15,7 @@
 ### GET - /api/person/v1/{id} | Consultar um cadastro.
 ### GET - /api/person/v1 | Listar todos os cadastros.
 ### POST - /api/person/v1 | Efetuar um cadastramento.
-### PATCH - /api/person/v1/{id}?idade={idade} | Atualizar um dos dados do cadastro (idade).
+### PATCH - /api/person/v1/{id} | Atualizar um dos dados do cadastro (idade).
 ### DELETE - /api/person/v1/{id} |  Efetuar a exclusão do cadastro.
 <br>
 
@@ -33,9 +33,9 @@ Além dos <b>testes unitários</b>, também foram adicionados <b>testes de integ
 # Docker
 ![image](https://github.com/guifami/Junior-Case-Spring-Boot-Restful-Api/assets/93688391/1dc931a0-658f-4e67-946e-7d520fae79d1)
 
-Tanto a API quanto o Banco de Dados MySql foram Dockerizados durante o desenvolvimento e utiliza uma Stack do <b>Docker Compose</b> para facilitar a migração para um novo ambiente.
+Tanto a API quanto o Banco de Dados MySql foram Dockerizados durante o desenvolvimento e utiliza uma Stack do <b>Docker Compose</b> para provisionamento automático.
 Para os Testes de Integração, são construídos 2 containers temporários para execução dos testes, e assim que concluídos, ambos são destruídos.
-Além disso, foi construído uma <b>Continuous Integration</b> com GitHub Actions para assim que "commitar" uma nova alteração no repositório Git, ela constrói as imagens Docker e as disponibiliza no Docker Hub, visível na aba <b>"Actions"</b>.
+Além disso, foi construído uma <b>Continuous Integration</b> com GitHub Actions para assim que "commitar" uma nova alteração no repositório Git, ela constrói as imagens Docker e as disponibiliza no Docker Hub, visível na aba <b>"Actions"</b>. A Imagem da Aplicação Spring sobe sem logs de erro mas testei e não consegui acessar os edpoints pela porta configurada (80), contudo, em caso da aplicação Spring não executar, é necessário clonar o repostório, executar o docker compose up -d --build, e executar a aplicação localmente, dessa forma, o banco de dados estará no Docker, e a aplicação localmente (endpoints acessíveis na porta 8888).
 <br><br>
 
 # Logs
