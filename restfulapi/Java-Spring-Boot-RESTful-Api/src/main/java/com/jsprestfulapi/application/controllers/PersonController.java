@@ -122,9 +122,9 @@ public class PersonController {
 		@ApiResponse(description = "Internal Error", responseCode = "500", content = @Content),
 		}
 	)
-	public PersonVO update(@PathVariable(value = "id") Long id, int idade){
+	public PersonVO update(@PathVariable(value = "id") Long id, @RequestBody PersonVO personVO){
 		_logger.addLogMessage("Atualizando idade do usuario id = " + id + ".");
-		return _personService.updateAge(id, idade);
+		return _personService.updateAge(id, personVO);
 	}
 	
 	@DeleteMapping(value = "/{id}")

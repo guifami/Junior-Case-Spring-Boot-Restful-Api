@@ -70,7 +70,7 @@ public class PersonServices {
 	}
 	
 	@Transactional
-	public PersonVO updateAge(Long id, int idade) {
+	public PersonVO updateAge(Long id, PersonVO personVO) {
 		
 		if(id == null) throw new RequiredObjectIsNullException();
 		
@@ -78,7 +78,7 @@ public class PersonServices {
 		
 		var entity = _repository.findById(id).orElseThrow(() -> new ResourceNotFoundException("No records found for this Id!"));
 		
-		entity.setIdade(idade);
+		entity.setIdade(personVO.getIdade());
 		
 		var vo = DozerMapper.parseObject(_repository.save(entity), PersonVO.class);
 		
