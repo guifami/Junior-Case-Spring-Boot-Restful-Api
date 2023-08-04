@@ -242,13 +242,13 @@ public class PersonControllerXmlTest extends AbstractIntegrationTest {
 						.body()
 							.asString();
 		
-		assertTrue(content.contains("<links><rel>self</rel><href>http://localhost:8888/api/person/v1/5</href></links>"));
-		assertTrue(content.contains("<links><rel>self</rel><href>http://localhost:8888/api/person/v1/3</href></links>"));
-		assertTrue(content.contains("<links><rel>self</rel><href>http://localhost:8888/api/person/v1/2</href></links>"));
-		assertTrue(content.contains("<links><rel>self</rel><href>http://localhost:8888/api/person/v1/1</href></links>"));
-		assertTrue(content.contains("<links><rel>self</rel><href>http://localhost:8888/api/person/v1/4</href></links>"));
+		assertTrue(content.contains("<links><rel>self</rel><href>http://localhost/api/person/v1/5</href></links>"));
+		assertTrue(content.contains("<links><rel>self</rel><href>http://localhost/api/person/v1/3</href></links>"));
+		assertTrue(content.contains("<links><rel>self</rel><href>http://localhost/api/person/v1/2</href></links>"));
+		assertTrue(content.contains("<links><rel>self</rel><href>http://localhost/api/person/v1/1</href></links>"));
+		assertTrue(content.contains("<links><rel>self</rel><href>http://localhost/api/person/v1/4</href></links>"));
 		
-		assertTrue(content.contains("<links><rel>self</rel><href>http://localhost:8888/api/person/v1?page=0&amp;size=5&amp;direction=asc</href></links>"));
+		assertTrue(content.contains("<links><rel>self</rel><href>http://localhost/api/person/v1?page=0&amp;size=5&amp;direction=asc</href></links>"));
 		assertTrue(content.contains("<page><size>5</size><totalElements>5</totalElements><totalPages>1</totalPages><number>0</number></page>"));
 	}
 	

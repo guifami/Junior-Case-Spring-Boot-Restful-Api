@@ -263,13 +263,13 @@ public class PersonControllerYamlTest extends AbstractIntegrationTest {
 		
 		var content = unthreatedContent.replace("\n", "").replace("\r", "");
 		
-		assertTrue(content.contains("rel: \"self\"    href: \"http://localhost:8888/api/person/v1/5\""));
-		assertTrue(content.contains("rel: \"self\"    href: \"http://localhost:8888/api/person/v1/3\""));
-		assertTrue(content.contains("rel: \"self\"    href: \"http://localhost:8888/api/person/v1/2\""));
-		assertTrue(content.contains("rel: \"self\"    href: \"http://localhost:8888/api/person/v1/1\""));
-		assertTrue(content.contains("rel: \"self\"    href: \"http://localhost:8888/api/person/v1/4\""));
+		assertTrue(content.contains("rel: \"self\"    href: \"http://localhost/api/person/v1/5\""));
+		assertTrue(content.contains("rel: \"self\"    href: \"http://localhost/api/person/v1/3\""));
+		assertTrue(content.contains("rel: \"self\"    href: \"http://localhost/api/person/v1/2\""));
+		assertTrue(content.contains("rel: \"self\"    href: \"http://localhost/api/person/v1/1\""));
+		assertTrue(content.contains("rel: \"self\"    href: \"http://localhost/api/person/v1/4\""));
 
-		assertTrue(content.contains("rel: \"self\"  href: \"http://localhost:8888/api/person/v1?page=0&size=5&direction=asc\""));
+		assertTrue(content.contains("rel: \"self\"  href: \"http://localhost/api/person/v1?page=0&size=5&direction=asc\""));
 		assertTrue(content.contains("page:  size: 5  totalElements: 5  totalPages: 1  number: 0"));
 	}
 	

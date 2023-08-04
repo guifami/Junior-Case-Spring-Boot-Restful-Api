@@ -238,13 +238,13 @@ public class PersonControllerJsonTest extends AbstractIntegrationTest {
 						.body()
 							.asString();
 		
-		assertTrue(content.contains("\"_links\":{\"self\":{\"href\":\"http://localhost:8888/api/person/v1/5\"}}}"));
-		assertTrue(content.contains("\"_links\":{\"self\":{\"href\":\"http://localhost:8888/api/person/v1/3\"}}}"));
-		assertTrue(content.contains("\"_links\":{\"self\":{\"href\":\"http://localhost:8888/api/person/v1/2\"}}}"));
-		assertTrue(content.contains("\"_links\":{\"self\":{\"href\":\"http://localhost:8888/api/person/v1/1\"}}}"));
-		assertTrue(content.contains("\"_links\":{\"self\":{\"href\":\"http://localhost:8888/api/person/v1/4\"}}}"));
+		assertTrue(content.contains("\"_links\":{\"self\":{\"href\":\"http://localhost/api/person/v1/5\"}}}"));
+		assertTrue(content.contains("\"_links\":{\"self\":{\"href\":\"http://localhost/api/person/v1/3\"}}}"));
+		assertTrue(content.contains("\"_links\":{\"self\":{\"href\":\"http://localhost/api/person/v1/2\"}}}"));
+		assertTrue(content.contains("\"_links\":{\"self\":{\"href\":\"http://localhost/api/person/v1/1\"}}}"));
+		assertTrue(content.contains("\"_links\":{\"self\":{\"href\":\"http://localhost/api/person/v1/4\"}}}"));
 		
-		assertTrue(content.contains("\"self\":{\"href\":\"http://localhost:8888/api/person/v1?page=0&size=5&direction=asc\"}"));
+		assertTrue(content.contains("\"self\":{\"href\":\"http://localhost/api/person/v1?page=0&size=5&direction=asc\"}"));
 	}
 	
 	private void mockPerson() {
