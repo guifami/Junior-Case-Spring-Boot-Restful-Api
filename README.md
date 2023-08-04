@@ -36,8 +36,6 @@ Além dos <b>testes unitários</b>, também foram adicionados <b>testes de integ
 Tanto a API quanto o Banco de Dados MySql foram Dockerizados durante o desenvolvimento e utiliza uma Stack do <b>Docker Compose</b> para provisionamento automático.
 Para os Testes de Integração, são construídos 2 containers temporários para execução dos testes, e assim que concluídos, ambos são destruídos.
 Além disso, foi construído uma <b>Continuous Integration</b> com GitHub Actions para assim que "commitar" uma nova alteração no repositório Git, ela constrói as imagens Docker e as disponibiliza no Docker Hub, visível na aba <b>"Actions"</b>.
-<br>
-<b>Link Docker Hub: https://hub.docker.com/repositories/guifami</b>
 <br><br>
 Para testes e melhor Documentação da API, adicionei o Swagger.
 <br>
@@ -48,3 +46,14 @@ Para testes e melhor Documentação da API, adicionei o Swagger.
 Os Logs da aplicação <b>main</b> são gerados conforme a interação com os Endpoints e persistidos na tabela <b>tb_logs</b>.
 <br>
 Quanto aos Logs de <b>teste</b>, são gerados em tempo de execução e é exibido conforme é testado.
+
+# Execução
+Para rodar o projeto, após clonado o repositório, no diretório onde se encontra o arquivo <b>pom.xml</b> execute o seguinte comando:
+<br>
+<b>mvn clean package -DskipTests</b>
+<br>
+Em seguida, vá ao diretório onde contém o arquivo <b>docker-compose.yml</b> e execute o seguinte comando:
+<br>
+<b>docker compose up -d --build</b>
+<br>
+Dessa forma, a aplicação já estará funcionando e pode ser executado os testes automatizados da maneira como preferir :).
