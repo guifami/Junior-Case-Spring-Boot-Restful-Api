@@ -29,7 +29,7 @@ services:
        SPRING.DATASOURCE.USERNAME: root
        SPRING.DATASOURCE.PASSWORD: Numsey#2023
      ports:
-       - 80:80
+       - 80:8888
      command: mvn spring-boot:run
      depends_on:
        - db
