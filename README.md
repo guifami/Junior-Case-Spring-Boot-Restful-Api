@@ -35,7 +35,9 @@ Além dos <b>testes unitários</b>, também foram adicionados <b>testes de integ
 
 Tanto a API quanto o Banco de Dados MySql foram Dockerizados durante o desenvolvimento e utiliza uma Stack do <b>Docker Compose</b> para provisionamento automático.
 Para os Testes de Integração, são construídos 2 containers temporários para execução dos testes, e assim que concluídos, ambos são destruídos.
-Além disso, foi construído uma <b>Continuous Integration</b> com GitHub Actions para assim que "commitar" uma nova alteração no repositório Git, ela constrói as imagens Docker e as disponibiliza no Docker Hub, visível na aba <b>"Actions"</b>. A Imagem da Aplicação Spring sobe sem logs de erro, mas testei e não consegui acessar os endpoints pela porta configurada (80), contudo, em caso da aplicação Spring não executar, é necessário clonar o repostório, executar o <b>docker compose up -d --build</b>, e executar a aplicação Spring localmente, dessa forma, o banco de dados estará no Docker, e a aplicação localmente (endpoints acessíveis na porta 8888).
+Além disso, foi construído uma <b>Continuous Integration</b> com GitHub Actions para assim que "commitar" uma nova alteração no repositório Git, ela constrói as imagens Docker e as disponibiliza no Docker Hub, visível na aba <b>"Actions"</b>. 
+<br><br>
+Para testes e melhor Documentação da API, adicionei o Swagger que assim que estiver rodando a aplicação, estará acessível no endereço: <b>http://localhost/swagger-ui/index.html#/</b>
 <br><br>
 
 # Logs
