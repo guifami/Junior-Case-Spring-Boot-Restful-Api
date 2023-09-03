@@ -3,15 +3,13 @@
 <br>
 
 # Banco de Dados
-<br>
-
-![image](https://github.com/guifami/Java-Spring-Boot-RESTful-Api/assets/93688391/c71261bb-8597-4fac-824f-58f223dd787a)
 ### Foi utilizado o Flyway como ferramenta de IaC para provisionar a Infraestrutura do Banco de Dados.
 <br>
 
 # Endpoints de Dados Pessoais
-![image](https://github.com/guifami/Java-Spring-Boot-RESTful-Api/assets/93688391/24d0a354-bf42-4bb5-a57e-e2ef5a32b6c9)
-<br><br>
+
+![image](https://github.com/guifami/Junior-Case-Spring-Boot-Restful-Api/assets/93688391/159396ca-2a7c-4039-a44e-d268cb75f8b0)
+
 ### GET - /api/person/v1/{id} | Consultar um cadastro.
 ### GET - /api/person/v1 | Listar todos os cadastros.
 ### POST - /api/person/v1 | Efetuar um cadastramento.
@@ -20,7 +18,8 @@
 <br>
 
 ### A API RESTful respeita o último nível de maturidade de Richardson:
-![image](https://github.com/guifami/Java-Spring-Boot-RESTful-Api/assets/93688391/5c4bef5f-d92a-47cc-8682-33fbf922da98)
+![image](https://github.com/guifami/Junior-Case-Spring-Boot-Restful-Api/assets/93688391/b0471b3a-e55a-4930-8a39-533a5a5dba32)
+
 
 ### Foi implementado 3 três tipos de Accepts: JSON, XML e YAML além dos links de HATEOAS e paginação, atigindo a Glória do REST. 
 A Aplicação foi construída com uma Arquitetura um pouco mais convencional devido a dificuldades durante a implementação prática da Arquitetura Hexagonal, que possivelmente atrasaria a implementação dos demais requisitos, mas claro, ainda extremamente sólida e eficiente.
